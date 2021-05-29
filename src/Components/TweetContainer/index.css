@@ -1,0 +1,50 @@
+.div-tweet{
+    display: flex;
+    justify-items: center;
+    background-color: white;
+    color: rgb(15, 20, 25);
+    width: 20%;
+    font-size: 15px;
+    margin:  10px 3px 3px 3px;
+    font-weight:300;
+    padding: 30px 5px;
+    flex-direction: column;
+    -webkit-box-shadow: 0 0 3px 1px #ababab;
+    box-shadow: 0 0 3px 1px #ababab;
+    border-radius: 9px;
+
+
+}
+
+.tweet-header{
+    display: flex;
+    flex-direction: row;
+    justify-items: flex-start;
+    align-items: center;
+    font-weight: bold;
+    margin-top: -4%;
+}
+ .screen-name {
+     margin-left: 10px;
+     display: flex;
+     flex-direction: column;
+}
+
+img{
+    border-radius: 33px;
+}
+.verified{
+    width: 20px;
+    margin-left: 5px;
+    margin-top: -16px;
+}
+
+.names{
+    margin-bottom: -37px;
+    overflow: hidden;
+}
+.tweet-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
