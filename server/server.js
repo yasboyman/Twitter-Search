@@ -21,7 +21,7 @@ app.get('/tweets', (req, res) => {
         if (!error) {
             res.send(tweets)
         } else {
-            return  res.status(500).send({message: error});
+            res.status(500).send({message: error});
 
         }
     });

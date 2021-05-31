@@ -8,9 +8,12 @@ const App = () => {
     const [loading, setLoading] = useState(false)
     const [input, setInput] = useState('')
     const [tweets, setTweets] = useState([])
+    const [status, setStatus] = useState('')
 
 
-    console.log('asdasdasdad', tweets.length === 0)
+    console.log('asdasdasdad', tweets)
+    console.log('sats', status)
+
 
     const fetchData = async (path) => {
         path.preventDefault()
@@ -19,9 +22,13 @@ const App = () => {
             const response = await axios.get(`http://localhost:8000/tweets?user=${input}`)
             setLoading(false)
             setTweets(response.data)
+            setStatus(response.status)
+
         } catch (e) {
             setLoading(false)
             console.log('error: ', e)
+            console.log('this is an error hello hello')
+            setStatus(500)
         }
     }
 
@@ -49,7 +56,7 @@ const App = () => {
                     </form>
                 </div>
                 <div className={'tweet-parent'}>
-                    {tweets.length === 0 ? 'User not found, Please try another' :
+                    { status === 500 ? 'User not found, Please try another' :
                         tweets.map((tweet, index) => {
                             if (index <= 9) {
                                 return <TweetContainer
@@ -61,6 +68,7 @@ const App = () => {
                                     verified={tweet.user.verified}
                                     retweets={tweet.favorite_count}
                                     likes={tweet.favorite_count}
+                                    key={tweet.id}
                                 />
                             }
                         })

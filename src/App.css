@@ -27,6 +27,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  width: 90%;
 }
 
 .nav img{
