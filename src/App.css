@@ -1,8 +1,8 @@
 .App {
   text-align: left;
-  /*background-image: url("./assets/twitterTest.jpg");*/
-
 }
+
+
 
 .App-header {
   background-color: black;
@@ -14,13 +14,63 @@
   font-size: calc(10px + 2vmin);
   color: white;
   background-image: url("./assets/twitterTest.jpg");
-  /*background-repeat: no-repeat;*/
-  background-repeat: repeat;
-  background-blend-mode: hard-light;
+  background-size: cover;
+  /*background-image: url('https://unsplash.it/1600/900?image=830');*/
 }
 
 .tweet-container{
   display:flex;
   justify-items: center;
 }
+.tweet-parent{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
+.nav img{
+  max-width: 80px;
+}
+
+form{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+
+.input input {
+  color: grey;
+  background-color: white;
+  /*border: solid 0px white;*/
+  outline: none;
+  text-align: left;
+  font-size: 16px;
+
+  box-shadow: 0 0 1px 1px #ababab;
+  padding: 6px;
+  width: 85%;
+  font-weight: 600;
+  border: hidden;
+}
+
+.input button {
+  font-weight: bolder;
+  mix-blend-mode: color-dodge;
+  background-color: slategrey;
+  font-weight: bolder;
+  cursor: pointer;
+  shape-outside: padding-box;
+  border: hidden;
+  cursor: pointer;
+
+}
+
+@media screen and (max-width: 998px) {
+  .tweet-parent{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+  }
+
+}

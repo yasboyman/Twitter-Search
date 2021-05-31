@@ -13,12 +13,9 @@ const TweetContainer = ({
                             likes
                         }) => {
 
-    console.log(tweetData)
-
-    if(!tweetData){
+    if (!tweetData) {
         return (<div> 'Please enter another user</div>)
     }
-
 
     return (
 
@@ -30,7 +27,7 @@ const TweetContainer = ({
                         <h4>{name}</h4>
                     </div>
                     <div>
-                        <h6>{screenName}</h6>
+                        <h6>@{screenName}</h6>
                     </div>
                 </div>
                 <div className={'verified'}>
@@ -40,14 +37,10 @@ const TweetContainer = ({
             <div>
                 <p>{tweet}</p>
             </div>
-            <hr/>
             <div className={'tweet-info'}>
-
-              <p>{retweets} Retweets</p>
+                <p>{retweets} Retweets</p>
                 <p>{likes} Likes</p>
             </div>
-
-
         </div>
 
 

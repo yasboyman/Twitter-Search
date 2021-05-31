@@ -3,7 +3,7 @@
     justify-items: center;
     background-color: white;
     color: rgb(15, 20, 25);
-    width: 20%;
+    width: 18%;
     font-size: 15px;
     margin:  10px 3px 3px 3px;
     font-weight:300;
@@ -45,6 +45,19 @@ img{
 }
 .tweet-info{
     display: flex;
+    margin-bottom: 0px;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: auto;
+}
+
+.tweet-bottom{
+    display: block;
+}
+
+@media screen and (max-width: 998px)  {
+    .div-tweet{
+        width: 47%
+
+    }
 }
