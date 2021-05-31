@@ -10,7 +10,7 @@ To get started, please clone this repo and follow the below instructions:
 
 1) cd into PoleStar and run yarn or npm install. Then run yarn start or npm start
 2) cd into server,  Then run node server.js
-3) Open http://localhost:3000 and begin creating a todo list.
+3) Open http://localhost:3000 and begin searching your favourite people using their twiiter handle.
 
 
 
