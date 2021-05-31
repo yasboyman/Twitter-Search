@@ -10,10 +10,7 @@ const App = () => {
     const [tweets, setTweets] = useState([])
     const [status, setStatus] = useState('')
 
-
-    console.log('asdasdasdad', tweets)
-    console.log('sats', status)
-
+    console.log('tweets', tweets)
 
     const fetchData = async (path) => {
         path.preventDefault()
@@ -56,7 +53,7 @@ const App = () => {
                     </form>
                 </div>
                 <div className={'tweet-parent'}>
-                    { status === 500 ? 'User not found, Please try another' :
+                    {status === 500 ? 'User not found, Please try another' :
                         tweets.map((tweet, index) => {
                             if (index <= 9) {
                                 return <TweetContainer
@@ -73,7 +70,6 @@ const App = () => {
                             }
                         })
                     }
-
                 </div>
                 {loading && 'loading...'}
             </header>

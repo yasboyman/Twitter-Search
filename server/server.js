@@ -1,6 +1,6 @@
 const express = require('express')
- const app = express()
- const port = 8000
+const app = express()
+const port = 8000
 
 var Twitter = require('twitter');
 
@@ -17,12 +17,11 @@ app.options('*', cors());
 
 app.get('/tweets', (req, res) => {
     const screen_name = req.query.user
-    client.get('statuses/user_timeline', { screen_name }, (error, tweets, response) => {
+    client.get('statuses/user_timeline', {screen_name}, (error, tweets, response) => {
         if (!error) {
             res.send(tweets)
         } else {
             res.status(500).send({message: error});
-
         }
     });
 })

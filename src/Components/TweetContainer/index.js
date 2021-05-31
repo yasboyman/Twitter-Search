@@ -13,12 +13,8 @@ const TweetContainer = ({
                             likes
                         }) => {
 
-    if (!tweetData) {
-        return (<div> 'Please enter another user</div>)
-    }
 
     return (
-
         <div className={'div-tweet'}>
             <div className={'tweet-header'}>
                 <img src={profilePic} alt={'profile_pic'}/>
@@ -42,10 +38,7 @@ const TweetContainer = ({
                 <p>{likes} Likes</p>
             </div>
         </div>
-
-
     )
-
 }
 
 export default TweetContainer
