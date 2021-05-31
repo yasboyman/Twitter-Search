@@ -2,9 +2,9 @@ const express = require('express')
 const app = express()
 const port = 8000
 
-var Twitter = require('twitter');
+const Twitter = require('twitter');
 
-var client = new Twitter({
+const client = new Twitter({
     consumer_key: 'ZSAvmrbo6kGggGXGTp4KqidVN',
     consumer_secret: '8ivfP2blr5UQJZBcSXujf6KFJRYhrdtD1WkjwLNU325Lpccibi',
     access_token_key: '1397547764825956356-bo7Wv8QtlVz7byc6h4saGlEW1J9q9P',
